@@ -1,0 +1,15 @@
+import objYAux.*
+import paises.*
+import vehiculos.*
+import luke.*
+
+
+describe "test" {
+  test "luke viaja a paris" {
+    luke.viajarA(paris)
+    assert.equals(1, luke.cantidadDeLugaresVisitados())
+  }
+  test "recuerdo actual" {
+    assert.equals(torreEiffel, luke.recuerdoEnCasa())
+  }
+}
